@@ -1,0 +1,17 @@
+.NavigationItem {
+	display: inline-block;
+	margin: 10px 10px;
+}
+
+.NavigationItem a {
+	text-decoration: none;
+	color: black;
+}
+
+.NavigationItem a.active {
+	color: #40a4c8;
+}
+
+.NavigationItem a:hover {
+    color: #99ccff;
+}
