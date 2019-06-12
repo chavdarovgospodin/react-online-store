@@ -28,7 +28,7 @@ export const fetchProducts = () => {
 		axios
 			.get('/products.json')
 			.then(response => {
-                console.log(response.data)
+				console.log(response.data);
 				dispatch(fetchProductsSuccess(response.data));
 			})
 			.catch(error => {

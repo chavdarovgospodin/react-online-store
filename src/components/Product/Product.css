@@ -1,0 +1,21 @@
+.Product {
+	list-style-type: none;
+	box-sizing: border-box;
+	display: block;
+	padding: 5px;
+	float: left;
+	margin: 50px;
+}
+
+.Product img {
+	width: 250px;
+	height: 250px;
+}
+
+.Span {
+	display: flex;
+	background-color: #ccff66;
+	border-radius: 4px;
+	border: 1px solid #ccff99;
+	text-align: center;
+}

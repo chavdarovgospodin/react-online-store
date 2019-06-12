@@ -8,7 +8,7 @@ const app = () => (
 	<Aux>
 		<BrowserRouter>
 			<NavigationItems />
-      <ProductBuilder/>
+			<ProductBuilder />
 		</BrowserRouter>
 	</Aux>
 );
