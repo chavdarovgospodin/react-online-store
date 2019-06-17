@@ -8,6 +8,21 @@
 	color: black;
 }
 
+.NavigationItem:nth-child(5) {
+	float: right;
+}
+
+
+.NavLink::before {
+	content: "";
+	height: 30px;
+	width: 30px;
+	background: url(../../../assets//images/images.png) no-repeat;
+	position: absolute;
+	margin-left: -30px;
+	background-size: 25px;
+}
+
 .NavigationItem a.active {
 	color: #40a4c8;
 }

@@ -13,6 +13,7 @@ class App extends Component {
 						<Route exact path="/" component={UnderDevelopment} />
 						<Route path="/cart" component={UnderDevelopment} />
 						<Route path="/profile" component={UnderDevelopment} />
+						<Route path="/contacts" component={UnderDevelopment} />
 						<Route path="/products" component={ProductBuilder} />
 					</Switch>
 				</div>
