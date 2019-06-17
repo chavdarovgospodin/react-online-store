@@ -1,15 +1,24 @@
-import React from 'react';
-import NavigationItems from '../src/components/Navigation/NavigationItems/NavigationItems';
-import { BrowserRouter } from 'react-router-dom';
-import Aux from '../src/hoc/Auxiliary/Auxiliary';
+import React, { Component } from 'react';
+import Navigation from '../src/components/Navigation/NavigationItems/NavigationItems';
 import ProductBuilder from './containers/ProductsBuilder/ProductsBuilder';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import UnderDevelopment from './components/UI/UnderDevelopment/underDevelopment';
+class App extends Component {
+	render() {
+		return (
+			<BrowserRouter>
+				<div>
+					<Navigation />
+					<Switch>
+						<Route exact path="/" component={UnderDevelopment} />
+						<Route path="/cart" component={UnderDevelopment} />
+						<Route path="/profile" component={UnderDevelopment} />
+						<Route path="/products" component={ProductBuilder} />
+					</Switch>
+				</div>
+			</BrowserRouter>
+		);
+	}
+}
 
-const app = () => (
-	<Aux>
-		<BrowserRouter>
-			<NavigationItems />
-			<ProductBuilder />
-		</BrowserRouter>
-	</Aux>
-);
-export default app;
+export default App;

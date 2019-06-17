@@ -8,15 +8,9 @@ const navigationItem = props => (
 			<NavigationItem link="/" exact>
 				Home
 			</NavigationItem>
-			<NavigationItem link="/cart" exact>
-				Cart
-			</NavigationItem>
-			<NavigationItem link="/products" exact>
-				Products
-			</NavigationItem>
-			<NavigationItem link="/profile" exact>
-				Profile
-			</NavigationItem>
+			<NavigationItem link="/cart">Cart</NavigationItem>
+			<NavigationItem link="/products">Products</NavigationItem>
+			<NavigationItem link="/profile">Profile</NavigationItem>
 		</ul>
 	</nav>
 );
